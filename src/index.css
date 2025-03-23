@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-background: #121212;
+  --color-background-lighter: #1e1e1e;
+  --color-primary: #6366f1;
+  --color-primary-light: #818cf8;
+  --color-primary-dark: #4f46e5;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--color-background);
+  color: #f3f4f6;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Neumorphic shadow style */
+.shadow-neumorph {
+  box-shadow: 
+    8px 8px 16px rgba(0, 0, 0, 0.5),
+    -8px -8px 16px rgba(255, 255, 255, 0.05);
+}
+
+/* Custom colors for Tailwind */
+:root {
+  --tw-bg-opacity: 1;
+  --background: 18, 18, 18;
+  --background-lighter: 30, 30, 30;
+}
+
+.bg-background {
+  background-color: rgb(var(--background) / var(--tw-bg-opacity));
+}
+
+.bg-background-lighter {
+  background-color: rgb(var(--background-lighter) / var(--tw-bg-opacity));
+}
